@@ -53,6 +53,15 @@ button:hover, .button:hover {
 .containerIndex{
 	display: grid;
 	grid-template-columns: 75% auto;
+	min-height: 100vh;
+	grid-template-rows: auto 1fr auto;
+}
+
+.containerBody {
+	display: grid;
+	grid-template-columns: 1fr;
+	min-height: 100vh;
+	grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -65,6 +74,7 @@ header {
 	top: 0px;
 	background-color: lightblue;
 	padding: 15px;
+	z-index: 9;
 }
 
 header .logo {
@@ -153,6 +163,14 @@ aside {
 	text-align: center;
 	margin-bottom: 15px;
 	box-shadow: 4px 4px 4px 0px rgba(133,128,128,0.75);
+	display: block;
+	color: #383838;
+	text-decoration: none;
+}
+
+.card:hover{
+	transform: translate(5px);
+    transition: transform 0.6s;
 }
 
 .card img {
@@ -258,7 +276,6 @@ div#cap6 {
 	grid-template-rows: 200px 200px; 
 	gap: 50px 100px; 
 	margin-top: 100px;
-	margin-left: 50px;
 	grid-template-areas: 
     "per1 per2 per3"
     "per4 per5 per6";
@@ -290,7 +307,7 @@ div#per6 {
 }
 
 .cardPersona {
-	background-color: #fff;
+	background-color: lightgray;
 	border-radius: 5px;
 	padding: 10px;
 	text-align: left;
@@ -379,6 +396,34 @@ div#per6 {
   	padding: 5px;
 	max-width: 100px;
 	height: auto;
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:  1;}
+}
+
+.fadeIn {
+	animation: fadeIn 2s;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(-10deg);
+	}
+
+	50% {
+		transform: rotate(10deg);
+	}
+
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+
+.rotate {
+	animation: rotate 3s linear infinite;
 }
 
 @media only screen and (max-width: 720px){
