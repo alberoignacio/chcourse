@@ -195,12 +195,20 @@ footer nav li {
 }
 
 .cardTexto{
-	background-color: #fff;
+	background-color: #C4D7E0;
 	border-radius: 5px;
 	padding: 10px;
+	margin: 20px;
 	text-align: left;
 	display: flex;
 	flex-direction: row;
+	box-shadow: 4px 4px 4px 0px rgba(133,128,128,0.75);
+}
+
+.cardTexto:hover{
+	transform: translate(5px);
+    transition: transform 0.6s;
+	background-color: #B2C8DF
 }
 
 .cardTexto img{
@@ -250,7 +258,7 @@ div#cap6 {
 }
 
 .cardCapitulo{
-	background-color: #fff;
+	background-color: #C4D7E0;
 	border-radius: 5px;
 	padding: 10px;
 	text-align: left;
@@ -259,6 +267,12 @@ div#cap6 {
 	display: flex;
 	flex-direction: column;
 	box-shadow: 4px 4px 4px 0px rgba(133,128,128,0.75);
+}
+
+.cardCapitulo:hover{
+	transform: translate(5px);
+    transition: transform 0.6s;
+	background-color: #B2C8DF;
 }
 
 .cardCapitulo img{
@@ -307,7 +321,7 @@ div#per6 {
 }
 
 .cardPersona {
-	background-color: lightgray;
+	background-image: linear-gradient(lightblue, #F8F9D7);
 	border-radius: 5px;
 	padding: 10px;
 	text-align: left;
@@ -316,6 +330,10 @@ div#per6 {
 	display: flex;
 	flex-direction: column;
 	box-shadow: 4px 4px 4px 0px rgba(133,128,128,0.75);
+}
+
+.cardPersona:hover{
+	transform: scale(1.1);
 }
 
 .cardPersona img{
