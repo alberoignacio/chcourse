@@ -77,11 +77,11 @@ header {
 	z-index: 9;
 }
 
-header .logo {
+/*header .logo {
 	padding: 0 10px;
 	max-width: 200px;
 	width: 100%;
-}
+}*/
 
 header ul {
 	font-size: 1.2rem;
@@ -104,8 +104,8 @@ header li a:hover {
 }
 
 main {
-	grid-column: 1 / 2;
-	grid-row: 2;
+	/*grid-column: 1 / 2;
+	grid-row: 2;*/
 	padding: 90px 15px;
 }
 
@@ -125,23 +125,19 @@ main {
 	height: 100%;
 }
 
-.containerIndex main{
-	display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 main h1 {
 	margin-bottom: 30px;
 }
 
+aside h2 {
+	text-align: center;
+}
+
 main p {
-	width: 80%;
-	font-size: 1.2rem;
+	margin: 30px;
 }
 
 main img {
-	width: 400px;
 	margin-bottom: 30px;
 }
 
@@ -150,8 +146,8 @@ main button {
 }
 
 aside {
-	grid-column: 2 / 3;
-	grid-row: 2;
+	/*grid-column: 2 / 3;
+	grid-row: 2;*/
 	padding: 30px;
 	background-color: #D9F8C4;
 }
@@ -375,7 +371,7 @@ div#per6 {
 	margin-top: 0;
 }
 
-.fomContactenos button {
+.formContactenos button {
 	margin-top: 20px
 }
 
@@ -445,13 +441,13 @@ div#per6 {
 }
 
 @media only screen and (max-width: 720px){
-	header {
+/*	header {
 		flex-direction: column;
-	}
+	}*/
 	
-	.containerIndex main {
+/*	.containerIndex main {
 		grid-column: 1 / 3;
-	}
+	}*/
 
 	.cardTexto{
 		flex-direction: column;
@@ -482,20 +478,20 @@ div#per6 {
 		
 	}
 
-	aside {
+/*	aside {
 		grid-column: 1 / 3;
   		grid-row: 3;
-	}
+	}*/
 
-	footer {
+/*	footer {
 		grid-column: 1 / 3;
   		grid-row: 4;
 		flex-direction: column;
-	}
+	}*/
 
-	footer article {
+/*	footer article {
 		margin-bottom: 20px;
-	}
+	}*/
 
 	footer li img {
 		width: 120px;
