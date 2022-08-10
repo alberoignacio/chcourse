@@ -27,7 +27,7 @@
             </div>
         </header>
         <div class="row">
-            <main class="col-9">
+            <main class="col-md-9">
                 <h1>Vive las aventuras de Babyshark!</h1>
                 <p class="lead">Bienvenido! Sumate a esta experiencia sin igual. Disfrutá de la canción suceso en todo el mundo. Bailá con nosotros y con tu familia para pasar el mejor de los días. Arriba las manos que ya comienza el show. Nos vemos adentro.</p>
                 <img class="fadeIn img-fluid mx-auto d-block" src="multimedia/grandmashark.png" alt="Mama Shark">
@@ -36,7 +36,7 @@
                     <button>Ingresá</button>
                 </div>        
             </main>
-            <aside class="col-3">
+            <aside class="col-md-3">
                 <h2>Personajes</h2>
                 <a class="card" href="pages/personajes.html">
                     <img class="img-fluid" src="multimedia/personajes/papa_shark.png" alt="Papa Shark">
@@ -53,21 +53,25 @@
             </aside>    
         </div>
         <footer>
-            <article>
-                <h3>Suscribite al newsletter</h3>
-                <input type="email" name="emailnewsletter" id="emailnewsletter" placeholder="Ingresa tu email">
-                <input class="button" type="submit" value="Enviar">
-            </article>
-            <nav>
-                <ul>
-                    <li>
-                        <img class="mobileStores img-fluid" src="multimedia/google-play.png" alt="googleplay">
-                    </li>
-                    <li>
-                        <img class="mobileStores img-fluid" src="multimedia/app-store.png" alt="appstore">
-                    </li>
-                </ul>
-            </nav>
+            <div class="container-fluid">
+                <div class="row">
+                    <article class="col-3">
+                        <h3>Suscribite al newsletter</h3>
+                        <input type="email" name="emailnewsletter" id="emailnewsletter" placeholder="Ingresa tu email">
+                        <input class="button" type="submit" value="Enviar">
+                    </article>
+                    <nav class="col-9 d-flex justify-content-end">
+                        <ul>
+                            <li>
+                                <img class="mobileStores img-fluid" src="multimedia/google-play.png" alt="googleplay">
+                            </li>
+                            <li>
+                                <img class="mobileStores img-fluid" src="multimedia/app-store.png" alt="appstore">
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>

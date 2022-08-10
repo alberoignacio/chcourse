@@ -5,23 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/multimedia/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- linkear nuestro css -->
 	<link rel="stylesheet" href="../css/estilos.css">
     <title>Contáctenos</title>
 </head>
 <body>
-    <header>
-        <!-- logo -->
-        <a href="../index.html"><img src="/multimedia/babysharklogo.png" alt="logo sitio" class="logo"></a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/personajes.html">Personajes</a></li>
-                <li><a href="../pages/capitulos.html">Capítulos</a></li>
-                <li><a href="../pages/quienes.html">Quiénes somos</a></li>
-                <li><a href="contactenos.html">Contáctenos</a></li>
-            </ul>
-        </nav>
+    <header class="container-fluid">
+        <div class="row">
+            <!-- logo -->
+            <div class="logo col-2"><a href="../index.html"><img src="../multimedia/babysharklogo.png" alt="logo sitio"></a></div>
+            <nav class="col-8">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/personajes.html">Personajes</a></li>
+                    <li><a href="../pages/capitulos.html">Capítulos</a></li>
+                    <li><a href="../pages/quienes.html">Quiénes somos</a></li>
+                    <li><a href="../pages/contactenos.html">Contáctenos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <h1>Unite al equipo de generación de contenido de Baby Shark!</h1>
@@ -54,21 +57,26 @@
     </main>
 
     <footer>
-        <article>
-            <h3>Suscribite al newsletter</h3>
-            <input type="email" name="emailnewsletter" id="emailnewsletter" placeholder="Ingresa tu email">
-            <input class="button" type="submit" value="Enviar">
-        </article>
-        <nav>
-            <ul>
-                <li>
-                    <img class="mobileStores" src="../multimedia/google-play.png" alt="googleplay">
-                </li>
-                <li>
-                    <img src="../multimedia/app-store.png" alt="appstore">
-                </li>
-            </ul>
-        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <article class="col-3">
+                    <h3>Suscribite al newsletter</h3>
+                    <input type="email" name="emailnewsletter" id="emailnewsletter" placeholder="Ingresa tu email">
+                    <input class="button" type="submit" value="Enviar">
+                </article>
+                <nav class="col-9 d-flex justify-content-end">
+                    <ul>
+                        <li>
+                            <img class="mobileStores img-fluid" src="../multimedia/google-play.png" alt="googleplay">
+                        </li>
+                        <li>
+                            <img class="mobileStores img-fluid" src="../multimedia/app-store.png" alt="appstore">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
