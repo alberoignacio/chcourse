@@ -1,1 +1,1 @@
-# Desafío GitHub+Animaciones
+# Aplicando animaciones
