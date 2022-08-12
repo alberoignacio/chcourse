@@ -33,6 +33,7 @@ p {
 }
 
 button, .button {
+	margin: 10px 0px;
 	padding: 8px 10px;
 	font-size: 1.1rem;
 	cursor: pointer;
@@ -47,7 +48,6 @@ button:hover, .button:hover {
 }
 
 /* Fin Estilos genericos */ 
-
 
 .containerIndex{
 	display: grid;
@@ -464,3 +464,4 @@ div#per6 {
 		flex-direction: column-reverse;
 	}
 }
+

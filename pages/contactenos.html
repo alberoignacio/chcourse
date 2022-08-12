@@ -26,36 +26,56 @@
             </nav>
         </div>
     </header>
-    <main>
-        <h1>Unite al equipo de generación de contenido de Baby Shark!</h1>
-        <h2>A continuación completa el formulario con tus datos y nos pondremos en contacto con vos.</h2>
-        <form class="formContactenos">
-            <article>
-                <label>Nombre</label>
-                <input type="text">
-                <div class="formRadio">
-                    <h3>Género</h3>
-                    <input type="radio" value="femenino" id="femenino">
-                    <label for="huey">Femenino</label>
-                    <input type="radio" value="masculino" id="femenino">
-                    <label for="huey">Masculino</label>
+    <main class="bg-light">
+        <div class="mt-5 conatiner">
+            <div class="text-center">
+                <h1 class="text-primary">Unite al equipo de generación de contenido de Baby Shark!</h1>
+                <h2>A continuación completa el formulario con tus datos y nos pondremos en contacto con vos.</h2>
+            </div>
+            <div class=" d-flex align-items-center justify-content-center">
+                <div class="col-md-6">
+                    <div class="p-4 rounded shadow-md">
+                        <div>
+                            <label for="nombre" class="form-label">Nombre y apellido</label>
+                            <input type="text" name="name" class="form-control" placeholder="Tu nombre completo" required>
+                        </div>
+                        <div class="mt-6">
+                            <label for="email" class="form-label">Correo</label>
+                            <input type="text" name="email" class="form-control" placeholder="Tu Email" required>
+                        </div>
+                        <div class="mt-6"> 
+                        <label>Estado Civil</label>
+                        <select class="form-control">
+                            <option>Casado</option>
+                            <option>Soltero</option>
+                        </select>
+                        </div>
+                        <div class="mt-6"> 
+                            <label>Género</label>
+                            <select class="form-control">
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>No binario</option>
+                            </select>
+                            </div>
+                        <div class="mt-6">
+                            <label for="linkedin" class="form-label">Perfil de Linkedin</label>
+                            <input type="text" name="subject" class="form-control" placeholder="Link a tu perfil de Linkedin" required>
+                        </div>
+                        <div class="mt-6 mb-6">
+                            <label for="mensaje" class="form-label">Dejanos tu mensaje</label>
+                            <textarea name="message" cols="20" rows="10" class="form-control"
+                                placeholder="Escribí aquí tu mensaje..."></textarea>
+                        </div>
+                        <button class="button">
+                            Enviar
+                        </button>
+                    </div>
                 </div>
-                <label>Comentarios</label>
-                <textarea></textarea>
-            </article>
-            <article>
-                <label>Email</label>
-                    <input type="email">
-                <label>Estado Civil</label>
-                <select>
-                    <option>Casado</option>
-                    <option>Soltero</option>
-                </select>
-            </article>
-        </form>
-            <button type="submit">Enviar</button>
+            </div>
+        </div>
+        </div>
     </main>
-
     <footer>
         <div class="container-fluid">
             <div class="row">
