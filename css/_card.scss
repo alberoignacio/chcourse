@@ -1,0 +1,90 @@
+.card {
+	background-color: #fff;
+	border-radius: $borderRadiusCard;
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 15px;
+	box-shadow: $cardBoxShadow;
+	display: block;
+	color: #383838;
+	text-decoration: none;
+    &:hover{
+        transform: translate(5px);
+        transition: transform 0.6s;
+    }
+    img {
+        width: 100px;
+    }
+}
+
+.cardTexto{
+	background-color: #C4D7E0;
+	border-radius: $borderRadiusCard;
+	padding: $paddingCard;
+	margin: 20px;
+	text-align: left;
+	display: flex;
+	flex-direction: row;
+	box-shadow: $cardBoxShadow;
+    &:hover{
+        transform: translate(5px);
+        transition: transform 0.6s;
+        background-color: #B2C8DF
+    }
+    img{
+        width: 300px;
+        justify-content: center;
+        align-content: center;
+    }
+    p{
+        padding: $cardPPadding;
+        margin: $cardPMargin;
+    }
+}
+
+.cardCapitulo{
+	background-color: #C4D7E0;
+	border-radius: $borderRadiusCard;
+	padding: $paddingCard;
+	text-align: left;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	box-shadow: $cardBoxShadow;
+    &:hover{
+        transform: translate(5px);
+        transition: transform 0.6s;
+        background-color: #B2C8DF;
+    }
+    img{
+        width: 100px;
+    }
+    p{
+        padding: $cardPPadding;
+        margin: $cardPMargin;
+    }
+}
+
+.cardPersona {
+	background-image: linear-gradient(lightblue, #F8F9D7);
+	border-radius: $borderRadiusCard;
+	padding: $paddingCard;
+	text-align: left;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	box-shadow: $cardBoxShadow;
+    &:hover{
+        transform: scale(1.1);
+    }
+    img{
+        width: 100px;
+        margin-top: 15px;
+    }
+    p{
+        padding: $cardPPadding;
+        margin: $cardPMargin;
+    }
+}

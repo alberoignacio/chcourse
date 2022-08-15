@@ -1,0 +1,195 @@
+@import "../css/_variables.scss";
+@import "../css/_buttons.scss";
+@import "../css/_text.scss";
+@import "../css/_header.scss";
+@import "../css/_footer.scss";
+@import "../css/_card.scss";
+@import "../css/_video.scss";
+/* Estilos genericos */ 
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: $mainFontFamily;
+	font-size: $mainFontSize; /* 1rem */
+	color: $mainFontColor;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Fin Estilos genericos */ 
+main {
+	padding: 90px 15px;
+	h1 {
+		margin-bottom: 30px;
+	}
+	p {
+		margin: 30px;
+	}
+	img {
+		margin-bottom: 30px;
+	}
+	button {
+		padding: 10px 25px;
+	}
+}
+
+aside {
+	padding: 30px;
+	background-color: #D9F8C4;
+	h2 {
+		text-align: center;
+	}
+}
+
+.grillaCapitulos{
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-rows: 1fr 1fr; 
+	gap: 15px 15px;
+	margin-top: 100px;
+	grid-template-areas: 
+    "cap1 cap2 cap3"
+    "cap4 cap5 cap6";
+}
+
+div#cap1 {
+	grid-area: cap1;
+}
+
+div#cap2 {
+	grid-area: cap2;
+}
+
+div#cap3 {
+	grid-area: cap3;
+}
+
+div#cap4 {
+	grid-area: cap4;
+}
+
+div#cap5 {
+	grid-area: cap5;
+}
+
+div#cap6 {
+	grid-area: cap6;
+}
+
+.grillaPersonas{
+	display: grid; 
+	grid-template-columns: 200px 200px 200px; 
+	grid-template-rows: 200px 200px; 
+	gap: 50px 100px; 
+	margin-top: 100px;
+	grid-template-areas: 
+    "per1 per2 per3"
+    "per4 per5 per6";
+	justify-content: center;
+}
+
+div#per1 {
+	grid-area: per1;
+}
+
+div#per2 {
+	grid-area: per2;
+}
+
+div#per3 {
+	grid-area: per3;
+}
+
+div#per4 {
+	grid-area: per4;
+}
+
+div#per5 {
+	grid-area: per5;
+}
+
+div#per6 {
+	grid-area: per6;
+}
+/* -------- Revisar abajo --------- */
+.mobileStores{
+	border-radius: 8px;
+}
+
+.subtituloCapitulos{
+	text-align: center;
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:  1;}
+}
+
+.fadeIn {
+	animation: fadeIn 2s;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(-10deg);
+	}
+
+	50% {
+		transform: rotate(10deg);
+	}
+
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+
+.rotate {
+	animation: rotate 3s linear infinite;
+}
+
+@media only screen and (max-width: 720px){
+
+	.cardTexto{
+		flex-direction: column;
+	}
+
+	.grillaCapitulos{
+		display: grid; 
+		grid-template-columns: 1fr 1fr; 
+		grid-template-rows: 1fr 1fr 1fr; 
+		gap: 15px 15px; 
+		grid-template-areas: 
+		"cap1 cap2"
+		"cap3 cap4"
+		"cap5 cap6";
+	}
+
+	.grillaPersonas{
+		display: grid; 
+		gap: 50px 100px; 
+		margin-top: 100px;
+		justify-content: center;
+		grid-template-columns: 200px 200px; 
+		grid-template-rows: 200px 200px 200px; 
+		grid-template-areas: 
+		"per1 per2"
+		"per3 per4"
+		"per5 per6";
+		
+	}
+
+	footer li img {
+		width: 120px;
+	}
+
+	.formContactenos {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
