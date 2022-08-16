@@ -1,5 +1,6 @@
 /*Variables Fonts*/
 /* Variables Cards */
+/* Variables Colores*/
 button, .button {
   margin: 10px 0px;
   padding: 8px 10px;
@@ -148,6 +149,7 @@ footer nav li {
   display: flex;
   flex-direction: column;
   box-shadow: 4px 4px 4px 0px rgba(133, 128, 128, 0.75);
+  height: fit-content;
 }
 .cardPersona:hover {
   transform: scale(1.1);
