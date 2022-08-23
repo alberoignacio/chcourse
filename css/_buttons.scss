@@ -4,11 +4,30 @@ button, .button {
 	font-size: 1.1rem;
 	cursor: pointer;
 	border-radius: 5px;
-	background-color: $colorButtonNotHover;
 	border: 1px solid #383838;
 	margin-right: 5px;
-    &:hover{
-        background-color:$colorButtonHover;
-    }
 }
 
+@mixin button-bg($bg) {
+	background: $bg;
+	&:hover {
+		background:darken($bg,8%);
+		transition: all 0.3s ease;
+	}
+	&:active {
+		background:darken($bg,25%);
+	} 
+}
+
+$buttonType: (
+reg: $colorAside,
+ing: $colorHeader,
+env: $colorButtonEnv
+);
+
+@each $name, $value in $buttonType {
+	.btn-#{$name} {
+		@extend .button;
+		@include button-bg($value);
+	}
+}

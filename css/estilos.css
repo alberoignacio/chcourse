@@ -1,18 +1,47 @@
 /*Variables Fonts*/
 /* Variables Cards */
 /* Variables Colores*/
-button, .button {
+button, .button, .btn-env, .btn-ing, .btn-reg {
   margin: 10px 0px;
   padding: 8px 10px;
   font-size: 1.1rem;
   cursor: pointer;
   border-radius: 5px;
-  background-color: #3eb7ae;
   border: 1px solid #383838;
   margin-right: 5px;
 }
-button:hover, .button:hover {
-  background-color: #5bcec5;
+
+.btn-reg {
+  background: #D9F8C4;
+}
+.btn-reg:hover {
+  background: #c2f4a0;
+  transition: all 0.3s ease;
+}
+.btn-reg:active {
+  background: #90ea52;
+}
+
+.btn-ing {
+  background: lightblue;
+}
+.btn-ing:hover {
+  background: #8ec9dc;
+  transition: all 0.3s ease;
+}
+.btn-ing:active {
+  background: #4baac8;
+}
+
+.btn-env {
+  background: #3eb7ae;
+}
+.btn-env:hover {
+  background: #349991;
+  transition: all 0.3s ease;
+}
+.btn-env:active {
+  background: #1e5853;
 }
 
 h1 {
