@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /*Variables Fonts*/
 /* Variables Cards */
 /* Variables Colores*/
@@ -66,6 +71,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   background-color: lightblue;
@@ -135,13 +141,13 @@ footer nav li {
   background-color: #B2C8DF;
 }
 .cardTexto img {
-  width: 300px;
+  width: 100px;
   justify-content: center;
   align-content: center;
 }
 .cardTexto p {
   padding: 10px;
-  margin: 50px;
+  margin: 5px;
 }
 
 .cardCapitulo {
@@ -161,11 +167,11 @@ footer nav li {
   background-color: #B2C8DF;
 }
 .cardCapitulo img {
-  width: 100px;
+  width: 400px;
 }
 .cardCapitulo p {
   padding: 10px;
-  margin: 50px;
+  margin: 5px;
 }
 
 .cardPersona {
@@ -178,6 +184,8 @@ footer nav li {
   display: flex;
   flex-direction: column;
   box-shadow: 4px 4px 4px 0px rgba(133, 128, 128, 0.75);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 .cardPersona:hover {
@@ -189,7 +197,7 @@ footer nav li {
 }
 .cardPersona p {
   padding: 10px;
-  margin: 50px;
+  margin: 5px;
 }
 
 .responsiveVideo {
@@ -208,11 +216,6 @@ footer nav li {
 }
 
 /* Estilos genericos */
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html {
   font-family: "Josefin Sans", sans-serif;
   font-size: 14px; /* 1rem */
@@ -246,6 +249,10 @@ aside {
 }
 aside h2 {
   text-align: center;
+}
+
+.imagenHome {
+  padding: 10px;
 }
 
 .grillaCapitulos {
@@ -325,6 +332,14 @@ div#per6 {
 }
 
 /* ANIMACIONES */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -334,7 +349,20 @@ div#per6 {
   }
 }
 .fadeIn {
-  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
 }
 
 @keyframes rotate {
@@ -349,19 +377,21 @@ div#per6 {
   }
 }
 .rotate {
-  animation: rotate 3s linear infinite;
+  -webkit-animation: rotate 3s linear infinite;
+          animation: rotate 3s linear infinite;
 }
 
 @media only screen and (max-width: 720px) {
   .cardTexto {
     flex-direction: column;
+    align-items: center;
   }
   .grillaCapitulos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 15px 15px;
-    grid-template-areas: "cap1 cap2" "cap3 cap4" "cap5 cap6";
+    grid-template-areas: "cap1" "cap2" "cap3" "cap4" "cap5" "cap6";
   }
   .grillaPersonas {
     display: grid;
@@ -379,6 +409,4 @@ div#per6 {
     display: flex;
     flex-direction: column-reverse;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

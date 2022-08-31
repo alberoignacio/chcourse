@@ -1,3 +1,7 @@
+*{
+	margin: 0;
+	padding: 0;
+}
 @import "../css/_variables.scss";
 @import "../css/_buttons.scss";
 @import "../css/_text.scss";
@@ -6,10 +10,6 @@
 @import "../css/_card.scss";
 @import "../css/_video.scss";
 /* Estilos genericos */ 
-*{
-	margin: 0;
-	padding: 0;
-}
 
 html {
 	font-family: $mainFontFamily;
@@ -44,6 +44,10 @@ aside {
 	h2 {
 		text-align: center;
 	}
+}
+
+.imagenHome{
+	padding: 10px;
 }
 
 .grillaCapitulos{
@@ -157,17 +161,22 @@ div#per6 {
 
 	.cardTexto{
 		flex-direction: column;
+		align-items: center;
+
 	}
 
 	.grillaCapitulos{
 		display: grid; 
-		grid-template-columns: 1fr 1fr; 
-		grid-template-rows: 1fr 1fr 1fr; 
+		grid-template-columns: 1fr; 
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
 		gap: 15px 15px; 
 		grid-template-areas: 
-		"cap1 cap2"
-		"cap3 cap4"
-		"cap5 cap6";
+		"cap1"
+		"cap2"
+		"cap3"
+		"cap4"
+		"cap5"
+		"cap6";
 	}
 
 	.grillaPersonas{
