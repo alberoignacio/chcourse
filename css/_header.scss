@@ -1,26 +1,5 @@
 header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	position: sticky;
-	top: 0px;
 	background-color: $colorHeader;
-	padding: 15px;
-	z-index: 9;
-	ul{
-		font-size: 1.2rem;
-		text-align:center;
-		li{
-			list-style-type: none;
-			display:inline-block;
-			padding: 10px;
-			a{
-				text-decoration: none;
-				color: darkslateblue;
-				&:hover{
-					color: lightslategray;
-				}
-			}
-		}
-	}
+	font-family: $mainFontFamily;
+	font-size: 20px;
 }

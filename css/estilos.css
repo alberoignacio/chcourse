@@ -68,31 +68,9 @@ p {
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
   background-color: lightblue;
-  padding: 15px;
-  z-index: 9;
-}
-header ul {
-  font-size: 1.2rem;
-  text-align: center;
-}
-header ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px;
-}
-header ul li a {
-  text-decoration: none;
-  color: darkslateblue;
-}
-header ul li a:hover {
-  color: lightslategray;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
 }
 
 footer {
@@ -104,6 +82,16 @@ footer nav li {
   list-style: none;
   display: inline-block;
   margin-left: 10px;
+}
+
+.social li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+ul {
+  margin-bottom: 0px;
 }
 
 .card {
@@ -381,11 +369,36 @@ div#per6 {
           animation: rotate 3s linear infinite;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
   .cardTexto {
     flex-direction: column;
     align-items: center;
   }
+  .grillaCapitulos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px 15px;
+    grid-template-areas: "cap1 cap2" "cap3 cap4" "cap5 cap6";
+  }
+  .grillaPersonas {
+    display: grid;
+    gap: 50px 100px;
+    margin-top: 100px;
+    justify-content: center;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: "per1 per2" "per3 per4" "per5 per6";
+  }
+  .formContactenos {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footerVertical {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
   .grillaCapitulos {
     display: grid;
     grid-template-columns: 1fr;
@@ -398,15 +411,8 @@ div#per6 {
     gap: 50px 100px;
     margin-top: 100px;
     justify-content: center;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-areas: "per1 per2" "per3 per4" "per5 per6";
-  }
-  footer li img {
-    width: 120px;
-  }
-  .formContactenos {
-    display: flex;
-    flex-direction: column-reverse;
+    grid-template-columns: 200px;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    grid-template-areas: "per1" "per2" "per3" "per4" "per5" "per6";
   }
 }/*# sourceMappingURL=estilos.css.map */

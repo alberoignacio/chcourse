@@ -12,70 +12,101 @@
     <!-- linkear nuestro css -->
 </head>
 <body>
-        <header class="container-fluid">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+        
+                <a href="index.html" class="navbar-brand ms-4 me-auto ms-lg-0 me-lg-0 logo img-fluid col-2"><img src="multimedia/babysharklogo.png" alt="logo sitio"></a>
+        
+                <div class="collapse navbar-collapse justify-content-center order-1 order-lg-0" id="navbarResponsiveLeft">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="/index.html" class="nav-link active" aria-current="page">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/pages/personajes.html" class="nav-link">Personajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/pages/capitulos.html" class="nav-link">Capítulos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/pages/quienes.html" class="nav-link">Quiénes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/pages/contactenos.html" class="nav-link">Contáctenos</a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarResponsiveLeft" aria-controls="navbarResponsiveLeft" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+            </div>
+        </nav>
+    </header>
+    <div class="row">
+        <main class="col-md-9">
+            <h1>Vive las aventuras de Babyshark!</h1>
+            <p class="lead">Bienvenido! Sumate a esta experiencia sin igual. Disfrutá de la canción suceso en todo el mundo. Bailá con nosotros y con tu familia para pasar el mejor de los días. Arriba las manos que ya comienza el show. Nos vemos adentro.</p>
+            <div class="imagenHome">
+                <img class="fadeIn img-fluid d-block" src="multimedia/babysharkhome.webp" alt="Mama Shark">
+            </div>
+            <div class="text-center">
+                <button class="btn-reg">Registrate</button>
+                <button class="btn-ing">Ingresá</button>
+            </div>
+        </main>
+        <aside class="col-md-3">
+            <h2>Personajes</h2>
+            <a class="card" href="pages/personajes.html">
+                <img class="img-fluid" src="multimedia/personajes/papa_shark.png" alt="Papa Shark">
+                <h3>Papa Shark</h3>
+            </a>
+            <a class="card" href="pages/personajes.html">
+                <img class="img-fluid" src="multimedia/personajes/babyyellow.png" alt="Papa Shark">
+                <h3>Yellow Shark</h3>
+            </a>
+            <a class="card" href="pages/personajes.html">
+                <img class="img-fluid" src="multimedia/personajes/babypink.png" alt="Papa Shark">
+                <h3>Pink Shark</h3>
+            </a>
+        </aside>    
+    </div>
+    <footer>
+        <div class="container-fluid">
             <div class="row">
-                <!-- logo -->
-                <div class="logo col-2 img-fluid"><a href="index.html"><img src="multimedia/babysharklogo.png" alt="logo sitio"></a></div>
-                <nav class="col-8">
+                <article class="col-12 col-md-3 text-center text-md-start">
+                    <h3>Suscribite al newsletter</h3>
+                    <input type="email" name="emailnewsletter" id="emailnewsletter" placeholder="Ingresa tu email">
+                    <input class="btn-env" type="submit" value="Enviar">
+                </article>
+                <div class="footerVertical col-12 col-md-5 d-flex justify-content-center social align-items-center">
+                    <ul class="list-group-horizontal">
+                        <li>
+                            <a href="https://www.facebook.com" target=”_blank”><img class="img-fluid" src="multimedia/facebook_icon.png" alt="facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com" target=”_blank”><img class="img-fluid" src="multimedia/Instagram_icon.png" alt="facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com" target=”_blank”><img class="img-fluid" src="multimedia/twitter_icon.png" alt="facebook"></a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="footerVertical col-12 col-md-4 d-flex justify-content-md-end justify-content-center align-items-center">
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="pages/personajes.html">Personajes</a></li>
-                        <li><a href="pages/capitulos.html">Capítulos</a></li>
-                        <li><a href="pages/quienes.html">Quiénes somos</a></li>
-                        <li><a href="pages/contactenos.html">Contáctenos</a></li>
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=kr.co.smartstudy.bodlebookiapfree_us_android_googlemarket&hl=es_AR&gl=US" target=”_blank”><img class="mobileStores img-fluid" src="multimedia/google-play.png" alt="googleplay"></a>
+                        </li>
+                        <li>
+                            <a href="https://apps.apple.com/us/app/pinkfong-baby-shark/id1134853735" target=”_blank”><img class="mobileStores img-fluid" src="multimedia/app-store.png" alt="appstore"></a>
+                        </li>
                     </ul>
                 </nav>
             </div>
-        </header>
-        <div class="row">
-            <main class="col-md-9">
-                <h1>Vive las aventuras de Babyshark!</h1>
-                <p class="lead">Bienvenido! Sumate a esta experiencia sin igual. Disfrutá de la canción suceso en todo el mundo. Bailá con nosotros y con tu familia para pasar el mejor de los días. Arriba las manos que ya comienza el show. Nos vemos adentro.</p>
-                <div class="imagenHome">
-                    <img class="fadeIn img-fluid d-block" src="multimedia/babysharkhome.webp" alt="Mama Shark">
-                </div>
-                <div class="text-center">
-                    <button class="btn-reg">Registrate</button>
-                    <button class="btn-ing">Ingresá</button>
-                </div>        
-            </main>
-            <aside class="col-md-3">
-                <h2>Personajes</h2>
-                <a class="card" href="pages/personajes.html">
-                    <img class="img-fluid" src="multimedia/personajes/papa_shark.png" alt="Papa Shark">
-                    <h3>Papa Shark</h3>
-                </a>
-                <a class="card" href="pages/personajes.html">
-                    <img class="img-fluid" src="multimedia/personajes/babyyellow.png" alt="Papa Shark">
-                    <h3>Yellow Shark</h3>
-                </a>
-                <a class="card" href="pages/personajes.html">
-                    <img class="img-fluid" src="multimedia/personajes/babypink.png" alt="Papa Shark">
-                    <h3>Pink Shark</h3>
-                </a>
-            </aside>    
         </div>
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
-                    <article class="col-3">
-                        <h3>Suscribite al newsletter</h3>
-                        <input type="email" name="emailnewsletter" id="emailnewsletter" placeholder="Ingresa tu email">
-                        <input class="btn-env" type="submit" value="Enviar">
-                    </article>
-                    <nav class="col-9 d-flex justify-content-end">
-                        <ul>
-                            <li>
-                                <a href="https://play.google.com/store/apps/details?id=kr.co.smartstudy.bodlebookiapfree_us_android_googlemarket&hl=es_AR&gl=US"><img class="mobileStores img-fluid" src="multimedia/google-play.png" alt="googleplay"></a>
-                            </li>
-                            <li>
-                                <a href="https://apps.apple.com/us/app/pinkfong-baby-shark/id1134853735"><img class="mobileStores img-fluid" src="multimedia/app-store.png" alt="appstore"></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </footer>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
